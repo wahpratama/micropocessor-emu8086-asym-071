@@ -33,11 +33,6 @@ Untuk memahaminya, perlu mengetahui struktur dasar komputer.
 | **BP** | Base Pointer | — |
 | **SP** | Stack Pointer | — |
 
-> **Catatan penting:**
-> - Memodifikasi register 8-bit (misal AL) juga memperbarui register 16-bit (AX), dan sebaliknya.
-> - Register jauh lebih cepat dari memori karena berada langsung di dalam CPU.
-> - "H" = High (byte atas), "L" = Low (byte bawah).
-
 ---
 
 ### Segment Registers
@@ -48,9 +43,6 @@ Untuk memahaminya, perlu mengetahui struktur dasar komputer.
 | **DS** | tempat variabel didefinisikan |
 | **ES** | Extra segment|
 | **SS** | segmen stack |
-
-> Segment registers memiliki tujuan khusus — **tidak disarankan** menyimpan data sembarang di sini.
-
 ---
 
 ### Special Purpose Registers
@@ -59,8 +51,6 @@ Untuk memahaminya, perlu mengetahui struktur dasar komputer.
 |----------|--------|
 | **IP** | Instruction Pointer — selalu berpasangan dengan CS |
 | **Flags** | Menentukan kondisi CPU setelah operasi matematika (Overflow, Direction, Interrupt, Trace, Sign, Zero, Auxiliary Carry, Parity, Carry) |
-
-> Register ini umumnya **tidak bisa diakses langsung** seperti register umum.
 
 ---
 
@@ -164,8 +154,6 @@ MOV [BX], CX        ; salin CX ke memori di B800:015E
 
 RET                 ; kembali ke sistem operasi
 ```
-
-> Program di atas menulis langsung ke **video memory** — hasilnya karakter `A` muncul di layar emulator.
 
 ---
 
