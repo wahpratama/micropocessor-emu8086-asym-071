@@ -5,7 +5,8 @@ project micropocesor pada emu8086 mengunakan bahasa tingkat rendah assembly lang
 ## 1. Apa itu Assembly Language?
 
 - Assembly merupakann bahasa pemrograman **level rendah**.
-- Untuk memahaminya, perlu mengetahui struktur dasar komputer.
+  
+Untuk memahaminya, perlu mengetahui struktur dasar komputer.
 
 ### Model Komputer Sederhana
 
