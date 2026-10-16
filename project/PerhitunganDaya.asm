@@ -41,7 +41,7 @@ MAIN PROC
     LEA DX, judul
     CALL CETAK_TEKS
     LEA DX, garis
-    CALL CETAK_TEKS
+    CALLK_TEKS
 
     ; Tampilkan daya
     LEA DX, label1
